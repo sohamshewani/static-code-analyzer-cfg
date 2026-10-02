@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Static Code Analyzer Test Runner
+# This script runs the static code analyzer on the project and checks for any issues.
+
+# Run the static code analyzer
+make analyze
+
+# Check if there are any issues
+if [ $? -eq 0 ]; then
+    echo "Static code analysis passed."
+else
+    echo "Static code analysis failed."
+fi
